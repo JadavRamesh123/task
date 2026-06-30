@@ -1,0 +1,99 @@
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f8fafc;
+  color: #1f2937;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  width: auto;
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  color: white;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  background: linear-gradient(135deg, #4f46e5, #3730a3);
+}
+
+div[style*="display: flex"] {
+  display: flex;
+  gap: 16px;
+  padding: 12px;
+  align-items: flex-start; 
+}
+
+
+div[style*="width: 300px"] {
+  width: 280px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 12px;
+  height: 100vh;
+  overflow-y: auto;
+  border: 1px solid #e5e7eb;
+}
+
+div[style*="width: 300px"] > button {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+
+div[style*="border: 1px solid #ccc"] {
+  border: 1px solid #e5e7eb;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background: #fff;
+  transition: 0.2s;
+}
+
+div[style*="border: 1px solid #ccc"]:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transform: translateY(-1px);
+}
+
+div[style*="background: #f0f8ff"] {
+  background: #eef2ff !important;
+  border-color: #6366f1;
+}
+
+
+h4 {
+  margin: 0 0 6px 0;
+  cursor: pointer;
+  font-size: 15px;
+  color: #111827;
+}
+
+small {
+  color: #6b7280;
+  font-size: 12px;
+}
+
+
+div[style*="display: flex"][style*="gap"] {
+  margin-top: 10px;
+}
+
+
+div[style*="display: flex"] button:first-child {
+  background: #ef4444;
+}
+
+
+div[style*="display: flex"] button:last-child {
+  background: #10b981;
+}
+
+div > div button {
+  background: linear-gradient(135deg, #06b6d4, #3b82f6);
+}

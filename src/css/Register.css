@@ -1,0 +1,136 @@
+/* MAIN CONTAINER */
+.register-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+}
+
+/* INNER BOX */
+.register-box {
+  display: flex;
+  width: 90%;
+  max-width: 1100px;
+  height: 600px;
+  margin: auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+/* LEFT PANEL */
+.left-panel {
+  flex: 1;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left-panel h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.left-panel p {
+  font-size: 16px;
+  opacity: 0.9;
+  line-height: 1.6;
+  max-width: 350px;
+}
+
+/* RIGHT PANEL */
+.right-panel {
+  flex: 1;
+  background: white;
+  padding: 60px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* TITLES */
+.right-panel h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.right-panel p {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+/* FORM */
+.right-panel form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* INPUTS */
+.right-panel input {
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.right-panel input:focus {
+  border-color: #2a5298;
+  box-shadow: 0 0 5px rgba(42, 82, 152, 0.3);
+}
+
+/* BUTTON */
+.right-panel button {
+  padding: 12px;
+  background: #2a5298;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.right-panel button:hover {
+  background: #1e3c72;
+  transform: translateY(-1px);
+}
+
+/* LINK */
+.right-panel a {
+  margin-top: 15px;
+  text-align: center;
+  display: block;
+  color: #2a5298;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.right-panel a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .register-box {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-panel,
+  .right-panel {
+    padding: 40px;
+    text-align: center;
+  }
+
+  .left-panel p {
+    margin: 0 auto;
+  }
+}
